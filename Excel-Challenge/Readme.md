@@ -1,4 +1,4 @@
-# Excel Homework
+# Excel Homework (KickStart My Chart)
 This is a repository created for excel challenge homework(Kickstart My Chart).
 
 ## Background
