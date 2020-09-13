@@ -1,6 +1,5 @@
-# Excel Homework: Kickstart My Chart
-This is a repository created for excell challenge homework.
+# Excel Homework
+This is a repository created for excell challenge homework(Kickstart My Chart).
 
 ## Background
-Welcome! 
 This space is created for answering to "excel challenge." In this repository 
