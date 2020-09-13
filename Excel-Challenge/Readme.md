@@ -8,7 +8,10 @@ This space is created for answering to "excel challenge." In this repository, we
 * Trend of campaign results from Jan to Dec. 
 * Outcome analysis based on the defined goal. 
 
-
+## Method Used 
+* Conditional Formating 
+* Data Conversion between Date an Unix TimeStamp in Excel 
+* Data Visualization in Excel 
 
 - - - 
 Mani Danesh, Sep 2020. 
