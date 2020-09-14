@@ -12,6 +12,7 @@ This space is created for answering to "excel challenge." In this repository, we
 * Conditional Formating 
 * Data Conversion between Date an Unix TimeStamp in Excel 
 * Data Visualization in Excel
+* Vlookup
 
 ## Software Requirments
 * Microsfot Excel 
