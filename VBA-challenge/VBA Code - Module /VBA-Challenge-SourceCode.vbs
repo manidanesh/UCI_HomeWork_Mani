@@ -171,6 +171,8 @@ Range("q4").Value = Max_Total_Volume
 
 Range("K:K").NumberFormat = "0%"
 Range("q2:q3").NumberFormat = "0%"
+Range("q2").Value = Range("q2").Value / 100
+Range("q3").Value = Range("q3").Value / 100
 
 
 End Sub
