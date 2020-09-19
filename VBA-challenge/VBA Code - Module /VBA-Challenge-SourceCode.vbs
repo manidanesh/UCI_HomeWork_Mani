@@ -17,9 +17,13 @@ Dim Max As Double
 Dim Min As Double
 
 
+'Calculate the total number of record in this data set, number of rows which has value'
+  last_record = Cells(Rows.Count, 1).End(xlUp).Row
 
 
-'Set headers value '
+'this counter will be used as a index for the distinct value and add the vlaue in column I, Count 100 means we have 100 unique Tickers in our data set'
+counter = 2
+
 Range("i1").Value = "Ticker"
 Range("j1").Value = "Yearly Change"
 Range("k1").Value = "Percentage Change"
@@ -32,15 +36,6 @@ Range("o4").Value = "Greatest Total Volume"
 Range("p1").Value = "Ticker"
 Range("q1").Value = "Value"
 
-'Calculate the total number of record in this data set, number of rows which has value'
-  last_record = Cells(Rows.Count, 1).End(xlUp).Row
-
-
-'this counter will be used as a index for the distinct value and add the vlaue in column I, Count 100 means we have 100 unique Tickers in our data set'
-  counter = 2
-
-
-'---- Tciker Symbols '
 For i = 2 To last_record
 
         'this condition is checking if a new value exisit in the data set for tickers
@@ -55,11 +50,10 @@ For i = 2 To last_record
         End If
         
 Next i
-'End of identifying Unique Ticker's value 
+'End of identifying '
 
-'------------------------------'
 
-'Yearly change :: opening price at the beginning of a given year to the closing price at the end of that year.'
+'Early change from opening price at the beginning of a given year to the closing price at the end of that year.'
   counter2 = 2
 
 For i = 2 To counter
@@ -93,15 +87,9 @@ For i = 2 To counter
   year_end = 0
 
 Next i
-
 'End of calculation for Yearly change and %of change for the openning price at beginning vs closing at the end of that year.'
 
-
-'------------------------------'
-
-'Formatting :: highlight  value in Yearly change column, positive value in green and negative valeu in red.'
-'Formatting :: Convert to % :: columns and cells contains % value Perentage Change (K) (Q2) (Q3)'
-
+'Conditional formatting that will highlight positive change in green and negative change in red.'
 For i = 2 To counter
 
   If Cells(i, 10).Value > 0 Then
@@ -117,16 +105,12 @@ For i = 2 To counter
 Next i
 'End of the loop for formatting the column Yearly_Change'
 
-'------------------------------'
 
-
-'Calculating Total Volume and update the Column L -> Column 12 '
+'Start section calculating total volume and update the column 12 '
 current_value = Cells(2, 9)
 Total_volume = 0
 
-
-'Summarize the  Total Stock Volume per Tickers.'
-
+'The total stock volume of the stock.'
 For i = 2 To counter
 
   For J = 2 To last_record
@@ -144,14 +128,12 @@ For i = 2 To counter
 
 Next i
 
-'-------------------------------'
-
-'"Greatest % increase", "Greatest % decrease" and "Greatest total volume". '
 
 Max = Range("J2").Value
 Min = Range("J2").Value
 
 Max_Total_Volume = Range("L2").Value
+
 
 For i = 3 To 400
     
@@ -185,5 +167,12 @@ Range("q2").Value = Max
 Range("q3").Value = Min
 Range("q4").Value = Max_Total_Volume
 
+'Change the format of Percenrage change and %increase / desrease '
+
+Range("K:K").NumberFormat = "0%"
+Range("q2:q3").NumberFormat = "0%"
+
+
 End Sub
+
 
