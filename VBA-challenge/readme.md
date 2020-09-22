@@ -29,9 +29,9 @@ In this assignment I am using VBA scripting to analyze a data set which is a rea
 
 ![Screenshot - 2014](https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2014%20.png)
 
-![Screenshot - 2015](/https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2015%20.png)
+![Screenshot - 2015](https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2015%20.png)
 
-![Screenshot - 2015](/https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2016%20.png)
+![Screenshot - 2016](https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2016%20.png)
 
 
 
