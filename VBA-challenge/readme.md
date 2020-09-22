@@ -7,11 +7,7 @@ In this assignment I am using VBA scripting to analyze a data set which is a rea
 
 ### Data 
 
-* [Test Data](Resources/alphabetical_testing.xlsx) - I developed my VBA script using this file(test data) and after testing I ran the same script on [Stock Data](Resources/Multiple_year_stock_data.xlsx)
-
-### Stock market analyst
-
-![stock Market](Images/stockmarket.jpg)
+* I developed my VBA script using the test data which was shared with me in the Gitlab- After testing I ran the same script on Multiple_year_stock_data.xlsx.
 
 ## Analysis Criteria 
 
