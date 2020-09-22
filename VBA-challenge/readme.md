@@ -24,7 +24,7 @@ In this assignment I am using VBA scripting to analyze a data set which is a rea
 
 ### File path
 
-* Based on the instruction the VBA script is upload in a seperate file and is accessible in this link : 
+* Based on the instruction the [VBA script](https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/VBA-Challendge.vba) is upload in a seperate file and is accessible in this link : 
 * Screen shots of 2014,2015 and 2016 are upload in this directory:  
 
 ![Screenshot - 2014](https://github.com/manidanesh/UCI_HomeWork_Mani/blob/master/VBA-challenge/Images/2014%20.png)
