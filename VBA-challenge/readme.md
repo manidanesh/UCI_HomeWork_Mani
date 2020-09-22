@@ -26,18 +26,13 @@ In this assignment I am using VBA scripting to analyze a data set which is a rea
   *"Greatest % increase", "Greatest % decrease" and "Greatest total volume". The solution will look as follows:
 
 
-
 ### CHALLENGES
 
-*  Based on the instruction the VBA script is upload in a seperate file and is accessible in this link : 
+* Based on the instruction the VBA script is upload in a seperate file and is accessible in this link : 
 * Screen shots of 2014,2015 and 2016 are upload in this directory:  
 
 ![hard_solution](Images/hard_solution.png)
 
-
-### Other Considerations
-
-* Use the sheet `alphabetical_testing.xlsx` while developing your code. This data set is smaller and will allow you to test faster. Your code should run on this file in less than 3-5 minutes.
 
 
 
