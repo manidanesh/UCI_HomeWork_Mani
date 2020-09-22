@@ -27,9 +27,9 @@ In this assignment I am using VBA scripting to analyze a data set which is a rea
 * Based on the instruction the VBA script is upload in a seperate file and is accessible in this link : 
 * Screen shots of 2014,2015 and 2016 are upload in this directory:  
 
-[Screenshot - 2014](Images /2014 .png)
+[Screenshot - 2014](/Images/2014 .png)
 
-[Screenshot - 2015](Images /2015 .png)
+[Screenshot - 2015](/Images/2015 .png)
 
 
 
