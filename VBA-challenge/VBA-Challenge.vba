@@ -1,24 +1,23 @@
 Sub Analytics():
 
-
 'define a counter to keep track of the tickers index '
 Dim counter As Integer
-'Define a value to store the start date of a year'
-Dim year_begin As Double
-'Define a value to store the end date of a year'
-Dim year_end As Double
 
+  'Define a value to store the start date of a year'
+Dim year_begin As Double
+
+  'Define a value to store the end date of a year'
+Dim year_end As Double
 Dim diff_year As Double
+  
 'This is a temprory value which will be used for identiy the Distinct Ticker'
 Dim current_value As String
-
 
 Dim Max As Double
 Dim Min As Double
 
-
-'Calculate the total number of record in this data set, number of rows which has value'
-  last_record = Cells(Rows.Count, 1).End(xlUp).Row
+ 'Calculate the total number of record in this data set, number of rows which has value'
+last_record = Cells(Rows.Count, 1).End(xlUp).Row
 
 
 'Count the distinct value in first column
@@ -49,14 +48,12 @@ Closed_value = 0
 'Loop for identifying unique tickers, calculatet he year change and % change value'
 
 For i = 3 To last_record
-
         'this condition is checking if a new value exisit in the data set for tickers
         If Cells(i, 1) <> current_value Then
             Z = i - 1
             Cells(counter, 9).Value = Cells(Z, 1).Value
             current_value = Cells(i, 1).Value
-            
-            
+                        
             'Calculate the yearly change Close(last day) - open(first day) '
             Closed_value = Cells(Z, 6).Value
             Cells(counter, 10).Value = Closed_value - Open_value
@@ -71,8 +68,8 @@ For i = 3 To last_record
             End If
             
             Open_value = Cells(i, 3)
-        
-          counter = counter + 1
+            'add up to the counter, this counter counts the unique number of tickers '
+            counter = counter + 1
         End If
         
 Next i
@@ -97,10 +94,9 @@ For i = 2 To counter
 Next i
 'End of the loop for formatting the column Yearly_Change'
 
-
 'Start section calculating total volume and update the column 12 '
-current_value = Cells(2, 9)
-Total_volume = 0
+  current_value = Cells(2, 9)
+  Total_volume = 0
 
 'The total stock volume of the stock.'
 For i = 2 To counter
@@ -109,7 +105,7 @@ For i = 2 To counter
 
         If (Cells(i, 9) = Cells(J, 1)) Then
 
-        Total_volume = Total_volume + Cells(J, 7).Value
+          Total_volume = Total_volume + Cells(J, 7).Value
 
         End If
 
@@ -120,12 +116,10 @@ For i = 2 To counter
 
 Next i
 
-
 Max = Range("J2").Value
 Min = Range("J2").Value
 
 Max_Total_Volume = Range("L2").Value
-
 
 For i = 3 To 400
     
@@ -149,9 +143,10 @@ For i = 3 To 400
     End If
     
     If Cells(i, 10) < 0 Then
-        Cells(i, 11) = 0 - Cells(i, 11)
+        
+      Cells(i, 11) = 0 - Cells(i, 11)
+    
     End If
-
 
 Next i
 
@@ -166,5 +161,3 @@ Range("q2:q3").NumberFormat = "0%"
 
 
 End Sub
-
-'Mani Danesh' 
